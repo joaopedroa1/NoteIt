@@ -1,12 +1,17 @@
 <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
-<div class="sem_notas">
-  <div class = "noNote">
-    <img class="postriste" src="../../assets/img/SemAnotcoes.png" alt="SemAnotações">
-    <h1 class="fonte_geral aviso">Você ainda não fez nenhuma anotação...</h1>
-    <h1 class="fonte_geral instrucao">Clique no botão "Criar uma nota" para começar suas anotações</h1>
+
+<ng-template #SemNotas>
+  <div class="sem_notas">
+    <div class = "noNote">
+      <img class="postriste" src="../../assets/img/SemAnotcoes.png" alt="SemAnotações">
+      <h1 class="fonte_geral aviso">Você ainda não fez nenhuma anotação...</h1>
+      <h1 class="fonte_geral instrucao">Clique no botão "Criar uma nota" para começar suas anotações</h1>
   </div>
 </div>
+</ng-template>
 
-<div *ngFor="let nota of listaNotas"> <!--É um forEach do Angular-->
-  <app-notacao [nota] = "nota"></app-notacao>
+<div *ngIf="listaNotas.length > 0, else SemNotas">
+  <div *ngFor="let nota of listaNotas"> <!--É um forEach do Angular-->
+    <app-notacao [nota] = "nota"></app-notacao>
+  </div>
 </div>
