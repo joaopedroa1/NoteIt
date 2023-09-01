@@ -1,0 +1,93 @@
+.fonte_geral{
+  font-family: 'K2D', sans-serif;
+  font-weight: 50;
+}
+
+.pesquisa{
+  opacity: 100%;
+  margin-left: 32px;
+  height: 40px;
+  width: 512px;
+  font-family: "K2D", sans-serif;
+  font-size: 30px;
+  margin-right: 80px;
+  background-color: #D9D9D9;
+  border: 0 none ;
+}
+
+
+.lupa{
+  margin-left: 24px;
+}
+
+.cabecalho{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.note{
+  margin-left: 32px;
+  font-style: bold;
+  font-weight: 550;
+}
+
+.postit{
+  width: 75px;
+  height: 75px;
+}
+
+.caixa_pesquisa{
+  display: flex;
+  background-color: #D9D9D9;
+  opacity: 35%;
+  padding: 4px;
+  height: 56px;
+  width: 512px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.conta{
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.config{
+  margin-left: 32px;
+  height: 64px;
+  width: 64px;
+}
+
+.linha{
+  width: 100%;
+  background-color: black;
+  height: 1px;
+  margin-top: 16px;
+}
+
+.criar{
+  text-decoration: none;
+  color: black;
+  background-color: #FFEE57;
+  font-size: 28px;
+  padding: 16px;
+  margin-left: 40px;
+  border-radius: 12px;
+  font-weight: 650;
+}
+
+.add{
+  margin-top: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
