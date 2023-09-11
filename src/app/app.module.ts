@@ -8,6 +8,7 @@ import { MainComponent } from './main/main.component';
 import { ConfirmaCriacaoComponent } from './confirma-criacao/confirma-criacao.component';
 import { NotacaoComponent } from './notacao/notacao.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
